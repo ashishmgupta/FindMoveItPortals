@@ -51,10 +51,6 @@ def get_company_moveit_url(companies_list):
 		print("[+] looking for moveit urls for : " + company)
 		response_data = requests.get(url, headers=headers)
 		output = response_data.text
-#		print(output)
-#		text_file = open("test.txt", "w")
-#		text_file.write(output)
-#		text_file.close()
 		all_urls = extract_urls_from_string(output)
 		# dedup
 		if not all_urls is None:
