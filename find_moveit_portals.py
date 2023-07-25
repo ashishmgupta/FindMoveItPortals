@@ -122,7 +122,7 @@ def get_company_moveit_url(companies_list):
 		if not all_urls is None:
 			all_urls = list(dict.fromkeys(all_urls))
 			if len(all_urls) > 0:
-				print(colored("[+] Found " + str(len(all_urls))) + " potential MoveIt portal URLs", "green")
+				print(colored("[+] Found " + str(len(all_urls)) + " potential MoveIt portal URLs", "green"))
 				for url in all_urls:
 					if not 'google.com' in url:
 						if is_move_it_portal(url) == "yes":
